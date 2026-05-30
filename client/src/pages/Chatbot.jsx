@@ -9,11 +9,11 @@ export default function Chatbot() {
   const sendMessage = async () => {
 
     const res = await axios.post(
-      "http://localhost:5000/chat",
-      {
-        message,
-      }
-    );
+  "https://bharat-sahayak-production.up.railway.app/chat",
+  {
+    message,
+  }
+);
 
     setReply(res.data.reply);
   };
