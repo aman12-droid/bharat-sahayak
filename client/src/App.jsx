@@ -9,6 +9,11 @@ import Chatbot from "./pages/Chatbot";
 import Farmer from "./pages/Farmer";
 import Student from "./pages/Student";
 import Healthcare from "./pages/Healthcare";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+
+
+
 
 function App() {
 
@@ -27,6 +32,11 @@ function App() {
         <Route path="/student" element={<Student />} />
 
         <Route path="/healthcare" element={<Healthcare />} />
+
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/signup" element={<Signup />} />
+
 
       </Routes>
 

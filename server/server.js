@@ -5,16 +5,16 @@ require("dotenv").config();
 
 const app = express();
 
-// ✅ Middlewares
+// Middlewares
 app.use(cors());
 app.use(express.json());
 
-// ✅ Health check route
+//  Health check route
 app.get("/", (req, res) => {
   res.send("🚀 Bharat Sahayak backend is running");
 });
 
-// ✅ CHAT ROUTE (FIXED)
+//  CHAT ROUTE (FIXED)
 app.post("/chat", async (req, res) => {
   try {
     const userMessage = req.body.message;
@@ -57,7 +57,7 @@ app.post("/chat", async (req, res) => {
   }
 });
 
-// ✅ PORT FIXED (RAILWAY SAFE)
+//  PORT FIXED (RAILWAY SAFE)
 const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
